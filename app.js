@@ -14,12 +14,14 @@ let age = 2025 - birthYear;
 
 if (age < 18) {
     console.log('Доступ обмежено')
+} else {
+    console.log('Доступ дозволено')
 }
 //   first level practice 3.
 let price1 = +prompt('Введіть ціну для розрахунку?')
 const price2 = 10
 const tax = 20
-let result = price1 - price2 * (tax/100)
+let result = price1 + price2 * (tax/100)
 console.log(result)
 //   second level practice 3.
 let email = prompt("Введіть вашу пошту: ")
