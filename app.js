@@ -14,7 +14,7 @@ console.log(
 )
 // filter
 console.log(data.filter((product) => {
-  return product.inStock === true
+  return product.inStock == true
 }))
 
 console.log(data.filter((product) => {
