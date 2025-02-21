@@ -55,9 +55,7 @@ console.log(
     data.reduce((acc, product) => acc + product.rating, 0) / data.filter(product => (product.isStock == true)).length
 )
 
-console.log(data.flatMap((product) => {
-  return product.reviews
-}).length)
+console.log(data.reduce((sum, product) => sum + product.reviews.length, 0))
 
 console.log(data.map((product) => ({
   productName: product.name,
