@@ -7,11 +7,11 @@ const onlyProduct = data.map((product) => product.name)
 console.log(onlyProduct)
 
 console.log(
-    data.map(product => ({
+    data.map((product) => {
         productName: product.name,
         price: product.price,
-      }))    
-)
+})))    
+
 // filter
 console.log(data.filter((product) => {
   return product.inStock == true
