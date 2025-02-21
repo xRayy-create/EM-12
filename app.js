@@ -52,7 +52,7 @@ console.log(
 console.log(data.flatMap(product => product.reviews))
 
 console.log(
-    data.reduce((sum, product) => sum + product.rating, 0) / data.filter(product => (product.isStock = true)).length
+    data.reduce((acc, product) => acc + product.rating, 0) / data.filter(product => (product.isStock = true)).length
 )
 
 console.log(data.flatMap((product) => {
